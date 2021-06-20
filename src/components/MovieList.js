@@ -27,14 +27,14 @@ const MovieList = (props)=> {
                 </tbody>
             </table>
             
-            <MovieFooter totalMovies={movies.length}/>
+            <MovieFooter totalMovies={props.movies.length}/>
         </div>
     );
 }
 
 const mapStateToProps = (state) => {
     return {
-        movies: state.movies
+        movies: state.movie.movies
     };
 };
 
